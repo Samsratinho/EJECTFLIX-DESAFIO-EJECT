@@ -83,7 +83,7 @@ form{
     height: 71px;
 }
 
-.entrar{
+.cadastre-se{
     color: #FFFFFF;
     font-size: 14px;
     font-weight: 400;
@@ -128,7 +128,7 @@ form{
     font-weight: bold;
 }
 
-.button-entrar{
+.button-cadastro{
     width: 354px;
     height: 49px;
     border-radius: 5px;
