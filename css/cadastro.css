@@ -101,7 +101,7 @@ form{
     border: 1px;
     opacity: 0px;
     background-color: #BAB7B7;
-    color:  #000000;
+    color:  #000000c6;
     padding-left: 19px;
 }
 
@@ -118,7 +118,7 @@ form{
     border: 1px;
     opacity: 0px;
     background-color: #BAB7B7;
-    
+    color: #000000c6;;
     padding-left: 19px;
 }
 
@@ -137,6 +137,7 @@ form{
     opacity: 0px;
     background-color: #E3C72DCC;
     color: #000000;
+    cursor: pointer;
 }
 
 .link-cadastro{

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
@@ -29,7 +28,7 @@ body{
     align-items: center;
     justify-content: space-around;
     width: 100%;
-    height: 70px;
+    height: 91px;
 }
 
 .nav-parent{
@@ -49,24 +48,38 @@ body{
 }
 
 .nav-categories{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    height: 91px;
-    background-color: #000000;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.btn-categories {
+    all: unset;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .nav-pai{
-    width: 40%;
+    width: 50%;
+}
+
+.btn-add{
+    all: unset;
+    color: #FFFFFF;
+    cursor: pointer;
 }
 
 .main {
-    margin-top: 20px;
-    height: 100vh;
+    height: 100vh; 
 }
-
-
 
 .carousel{
     margin-bottom: 3%;
