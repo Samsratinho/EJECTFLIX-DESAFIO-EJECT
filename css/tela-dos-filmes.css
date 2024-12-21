@@ -77,9 +77,14 @@ body{
     color: #FFFFFF;
     cursor: pointer;
 }
-
+.nav_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
 .main {
-    height: 100vh; 
+    height: 100dvh; 
 }
 
 .carousel{
