@@ -20,7 +20,7 @@
             <ul>
                 <li>Início</li>
                 <li>Categorias</li>
-                <button id="btn-modal" class="btn-add">Adicionar Filmes</button>
+                <button id="btn-modal" class="btn-add">Adicionar Filmes</button> <!-- btn modal ^ -->
             </ul>
         </nav>
         <span class="eject-icone-span">
@@ -28,10 +28,10 @@
         </span>
     </header>
 
-    <div id="modal" class="modal">
+    <div id="modal" class="modal"> <!-- modal -->
         <form class="modal-content">
             <div class="close-content">
-                <span id="close" class="close">&times;</span>
+                <span id="close" class="close">&times;</span> <!-- close -->
             </div>
             <p class="adicionar-filme">Adicionar Filme à lista:</p>
 
@@ -65,6 +65,40 @@
         <div id="carrossel-filmes-2" class="carousel" data-flickity='{ "groupCells": true }'></div>
     </main>
 
+    <div id="modalEdit" class="modal">
+        <form class="modal-content">
+            <div class="close-content">
+                <span id="closeEdit" class="close">&times;</span>
+            </div>
+            <p class="adicionar-filme">Adicionar Filme à lista:</p>
+
+            <div class="endereco-nome">
+                <div class="div-retangulo">
+                    <p class="p-modal">Endereço da imagem</p>
+                    <input class="inserir" type="text" placeholder="Inserir...">
+                </div>
+                <div class="div-retangulo">
+                    <p class="p-modal">Nome do filme</p>
+                    <input class="inserir" type="text" placeholder="Inserir...">
+                </div>
+            </div>
+
+            <div class="categoria-ano">
+                <div class="div-retangulo">
+                    <p class="p-modal">Categoria</p>
+                    <input class="inserir" type="text" placeholder="Inserir...">
+                </div>
+                <div class="div-retangulo">
+                    <p class="p-modal">Ano de lançamento</p>
+                    <input class="inserir" type="text" placeholder="XX/XX/XXXX">
+                </div>
+            </div>
+            <div class="div-buttons">
+                <button id="save-movie" class="button-salvar">Salvar</button>
+                <button id="delet-movie" class="button-excluir">Excluir</button>
+            </div>
+        </form>
+    </div>    
 
     <footer>
         <div class="footer-row">
@@ -73,14 +107,17 @@
             <img src="../../img/insta.svg" alt="logo do instagram">
             <img src="../../img/github.svg" alt="logo do github">
         </div>
-        
     </footer>
 
     <script type="module" src="../../js/filmes/filmes.js"></script>
 
     <script src="../../js/utils/getApiUrl.js"></script>
 
+    <script type="module" src="../../js/utils/token.js"></script>
+
     <script src="../../js/filmes/modal.js"></script>
+
+    <script src="../../js/filmes/modalEdicao.js"></script>
 
     <!--Flickity-->
     <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
