@@ -4,7 +4,7 @@
 }
 
 .modal{
-    display: none;
+    display: none; 
     position: fixed;
     z-index: 999;
     left: 0;
@@ -114,18 +114,6 @@
     display: flex;
     gap: 30px;
     padding-bottom: 50px;
-}
-
-.button-adicionar{
-    width: 152px;
-    height: 38px;
-    border-radius: 5px;
-    font-weight: bold;
-    border: 1px;
-    opacity: 0px;
-    background-color: #bab7b7;
-    color: #353535;
-    cursor: pointer;
 }
 
 .div-buttons{
