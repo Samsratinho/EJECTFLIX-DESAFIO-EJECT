@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+}
+
+body{
+    background-color: rgba(27, 27, 27, 1);
+    background-size: cover;
+    background-position: center;
+    
+    font-family: "Hammersmith One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 10% 20px 10%;
+}
+
+nav{
+    width: 40%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li{
+    list-style: none;
+    font-family: "Hammersmith One", sans-serif;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 6px;
+}
+
+nav ul li:hover{
+    color: rgb(225, 225, 225);
+}
+
+.btn-add{
+    all: unset;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid rgba(227, 199, 45, 0.8);
+    border-radius: 5px;
+    list-style: none;
+    font-family: "Hammersmith One", sans-serif;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 6px;
+}
+
+
+.eject-icone-span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.eject-icone-span img{
+    width: 30px;
+    height: 30px;
+
+}
+
+
+
+.ejectflix-logo-span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+}
+
+.ejectflix-logo-span img{
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    background-color: black;
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    padding: 1.2rem;
+}
+
+.footer-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: 400;
+    font-family: "Roboto Mono", monospace;
+    font-size: 12px;
+}
+
+.footer-row img{
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.footer-row img:hover{
+    opacity: 0.8;
+}
+
+
+/* Smartphones */
+@media (max-width: 480px) {
+
+}
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+
+}
+
+/* Desktops pequenos */
+@media (min-width: 1025px) and (max-width: 1200px) {
+    
+}
+
+/* Desktops grandes */
+@media (min-width: 1201px) {
+
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/filmes/filmes.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css">
+    <link rel="stylesheet" href="../../css/carrossel/carousel-filmes.css">
+    <link rel="stylesheet" href="../../css/filmes/modal.css">
+
+    <title>EjectFlix</title>
+</head>
+<body>
+    
+    <header>
+        <span class="ejectflix-logo-span">
+            <img src="../../img/ejectflix-logo.png" alt="">
+        </span>
+        <nav>
+            <ul>
+                <li>Início</li>
+                <li>Categorias</li>
+                <button id="btn-modal" class="btn-add">Adicionar Filmes</button>
+            </ul>
+        </nav>
+        <span class="eject-icone-span">
+            <img src="../../img/eject-icone.png">
+        </span>
+    </header>
+
+    <div id="modal" class="modal">
+        <form class="modal-content">
+            <div class="close-content">
+                <span id="close" class="close">&times;</span>
+            </div>
+            <p class="adicionar-filme">Adicionar Filme à lista:</p>
+
+            <div class="endereco-nome">
+                <div class="div-retangulo">
+                    <p class="p-modal">Endereço da imagem</p>
+                    <input class="inserir" type="text" placeholder="Inserir...">
+                </div>
+                <div class="div-retangulo">
+                    <p class="p-modal">Nome do filme</p>
+                    <input class="inserir" type="text" placeholder="Inserir...">
+                </div>
+            </div>
+
+            <div class="categoria-ano">
+                <div class="div-retangulo">
+                    <p class="p-modal">Categoria</p>
+                    <input class="inserir" type="text" placeholder="Inserir...">
+                </div>
+                <div class="div-retangulo">
+                    <p class="p-modal">Ano de lançamento</p>
+                    <input class="inserir" type="text" placeholder="XX/XX/XXXX">
+                </div>
+            </div>
+            <button id="add-movie" class="button-adicionar">Adicionar</button>
+        </form>
+    </div>
+
+    <main>
+        <div id="carrossel-filmes-1" class="carousel" data-flickity='{ "groupCells": true }'></div>
+        <div id="carrossel-filmes-2" class="carousel" data-flickity='{ "groupCells": true }'></div>
+    </main>
+
+
+    <footer>
+        <div class="footer-row">
+            <p>Made by Samuel Silva</p>
+            <img src="../../img/linkedin.svg" alt="logo do linkedin">
+            <img src="../../img/insta.svg" alt="logo do instagram">
+            <img src="../../img/github.svg" alt="logo do github">
+        </div>
+        
+    </footer>
+
+    <script type="module" src="../../js/filmes/filmes.js"></script>
+
+    <script src="../../js/utils/getApiUrl.js"></script>
+
+    <script src="../../js/filmes/modal.js"></script>
+
+    <!--Flickity-->
+    <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+    <!--Axios-->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+</html>
