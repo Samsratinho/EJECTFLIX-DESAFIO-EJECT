@@ -6,7 +6,7 @@ const $submitBtn = document.querySelector("#submit-btn")
 
 async function fazerLogin(email, password){
     try{
-        const response = await axios.post(getApiUrl('usuario/login/'), {
+        const response = await axios.post(getApiUrl('https://movies-api-juliocsoares.fly.dev/usuario/login/'), {
             username: email.split('@')[0],
             email,
             password
@@ -32,7 +32,7 @@ async function checarAutenticacaoERedirecionar(){
 
         const response = await axios.get(getApiUrl('filmes'),{
             headers:{
-                'Authorization': `Bearer `
+                'Authorization': `Bearer ${token}`
             }
         })
         if(response){
