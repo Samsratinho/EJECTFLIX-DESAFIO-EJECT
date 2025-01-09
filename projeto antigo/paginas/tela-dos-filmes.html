@@ -76,51 +76,13 @@
         </form>
     </div>
 
-    <main class="main">
-        <section class="nav_section">
-        <div class="carrossel_wrapper">
-                <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                </div>
-                <div class="carousel"
-                    data-flickity='{ "wrapAround": true }'
-                >
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                    <div class="carousel-cell"></div>
-                </div>
-        </div>
-        </section>
+    <main>
+        <div id="carrossel-filmes-1" class="carousel" data-flickity='{ "groupCells": true }'></div>
+        <div id="carrossel-filmes-2" class="carousel" data-flickity='{ "groupCells": true }'></div>
     </main>
 
+
     <footer>
-        
         <div class="footer-section">
             <p>Made by Samuel silva</p>
             <img src="/img/linkedin.svg" alt="icon linkedin">
@@ -129,7 +91,10 @@
         </div>
     </footer>
 
-    <script src="/js/tela-dos-filmes.js"></script>
+    <script src="/js/pages/tela-dos-filmes.js"></script>
+
     <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+    
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </body>
 </html>
