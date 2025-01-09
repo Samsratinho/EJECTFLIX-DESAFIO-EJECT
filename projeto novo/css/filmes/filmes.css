@@ -27,7 +27,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0px 10% 20px 10%;
+    padding: 0px 10% 5px 10%;
 }
 
 nav{
@@ -79,8 +79,6 @@ nav ul li:hover{
     height: 30px;
 
 }
-
-
 
 .ejectflix-logo-span{
     display: flex;
