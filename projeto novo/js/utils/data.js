@@ -20,6 +20,27 @@ const itemCarrosselFilmesData = [
     },
     {
         "img": "../../img/percyJakson.svg"
+    },
+    {
+        "img": "../../img/percyJakson.svg"
+    },
+    {
+        "img": "../../img/harryPotter.svg",
+    },
+    {
+        "img": "../../img/percyJakson.svg"
+    },
+    {
+        "img": "../../img/harryPotter.svg",
+    },
+    {
+        "img": "../../img/percyJakson.svg"
+    },
+    {
+        "img": "../../img/harryPotter.svg",
+    },
+    {
+        "img": "../../img/percyJakson.svg"
     }
 ]
 
@@ -44,6 +65,27 @@ const itemCarrosselFilmesData2 = [
     },
     {
         "img": "../../img/harryPotter.svg",
+    },
+    {
+        "img": "../../img/percyJakson.svg"
+    },
+    {
+        "img": "../../img/harryPotter.svg",
+    },
+    {
+        "img": "../../img/percyJakson.svg"
+    },
+    {
+        "img": "../../img/harryPotter.svg",
+    },
+    {
+        "img": "../../img/percyJakson.svg"
+    },
+    {
+        "img": "../../img/harryPotter.svg",
+    },
+    {
+        "img": "../../img/percyJakson.svg"
     }
 ]
 
