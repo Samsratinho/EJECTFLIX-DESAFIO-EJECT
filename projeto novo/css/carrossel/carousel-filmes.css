@@ -6,6 +6,9 @@
 
 body { font-family: sans-serif; }
 
+
+
+
 .carousel {
   height: 280px;
   margin-bottom: 30px;
@@ -69,7 +72,7 @@ body { font-family: sans-serif; }
   font-family: "Hammersmith One", sans-serif;
 }
 
-.plus {
+.btn-open-1 {
   z-index: 100;
   position: absolute; 
   bottom: 245px;           

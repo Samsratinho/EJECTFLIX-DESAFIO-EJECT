@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/filmes/filmes.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css">
+    <link rel="stylesheet" href="../../css/filmes/modalEdicao.css">
     <link rel="stylesheet" href="../../css/carrossel/carousel-filmes.css">
     <link rel="stylesheet" href="../../css/filmes/modal.css">
 
@@ -19,7 +20,7 @@
         <nav>
             <ul>
                 <li>Início</li>
-                <li>Categorias</li>
+                <button id="btn-categorias" class="btn-categorias">Categorias</button>
                 <button id="btn-modal" class="btn-add">Adicionar Filmes</button> <!-- btn modal ^ -->
             </ul>
         </nav>
@@ -27,6 +28,19 @@
             <img src="../../img/eject-icone.png">
         </span>
     </header>
+
+    
+    <div class="categories-parent" id="categories-parent">
+        <nav class="categories-nav">
+            <ul>
+                <li><a href="">Ação</a></li>
+                <li><a href="">Aventura</a></li>
+                <li><a href="">Comédia</a></li>
+                <li><a href="">Drama</a></li>
+                <li><a href="">Suspense</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <div id="modal" class="modal"> <!-- modal -->
         <form class="modal-content">
@@ -61,44 +75,48 @@
     </div>
 
     <main>
-        <div id="carrossel-filmes-1" class="carousel" data-flickity='{ "groupCells": true }'></div>
-        <div id="carrossel-filmes-2" class="carousel" data-flickity='{ "groupCells": true }'></div>
+        <section class="nav_section">
+            <div class="carrossel_weapper">
+                <div id="carrossel-filmes-1" class="carousel" data-flickity='{ "groupCells": true }'></div>
+                <div id="carrossel-filmes-2" class="carousel" data-flickity='{ "groupCells": true }'></div>
+            </div>
+        </section>
     </main>
 
-    <div id="modalEdit" class="modal">
-        <form class="modal-content">
-            <div class="close-content">
-                <span id="closeEdit" class="close">&times;</span>
-            </div>
-            <p class="adicionar-filme">Adicionar Filme à lista:</p>
+    <!-- Modal -->
+    <div class="modal-1">
+        <div class="modal-content-1">
+            <span class="close-1">&times;</span>
+            <p class="adicionar-filme-1">Adicionar Filme à lista:</p>
 
-            <div class="endereco-nome">
-                <div class="div-retangulo">
-                    <p class="p-modal">Endereço da imagem</p>
-                    <input class="inserir" type="text" placeholder="Inserir...">
+            <div class="endereco-nome-1">
+                <div class="div-retangulo-1">
+                    <p class="p-modal-1">Endereço da imagem</p>
+                    <input class="inserir-1" type="text" placeholder="Inserir...">
                 </div>
-                <div class="div-retangulo">
-                    <p class="p-modal">Nome do filme</p>
-                    <input class="inserir" type="text" placeholder="Inserir...">
+                <div class="div-retangulo-1">
+                    <p class="p-modal-1">Nome do filme</p>
+                    <input class="inserir-1" type="text" placeholder="Inserir...">
                 </div>
             </div>
 
-            <div class="categoria-ano">
-                <div class="div-retangulo">
-                    <p class="p-modal">Categoria</p>
-                    <input class="inserir" type="text" placeholder="Inserir...">
+            <div class="categoria-ano-1">
+                <div class="div-retangulo-1">
+                    <p class="p-modal-1">Categoria</p>
+                    <input class="inserir-1" type="text" placeholder="Inserir...">
                 </div>
-                <div class="div-retangulo">
-                    <p class="p-modal">Ano de lançamento</p>
-                    <input class="inserir" type="text" placeholder="XX/XX/XXXX">
+                <div class="div-retangulo-1">
+                    <p class="p-modal-1">Ano de lançamento</p>
+                    <input class="inserir-1" type="text" placeholder="XX/XX/XXXX">
                 </div>
             </div>
-            <div class="div-buttons">
-                <button id="save-movie" class="button-salvar">Salvar</button>
-                <button id="delet-movie" class="button-excluir">Excluir</button>
+
+            <div class="div-buttons-1">
+                <button class="button-salvar-1">Salvar</button>
+                <button class="button-excluir-1">Excluir</button>
             </div>
-        </form>
-    </div>    
+        </div>
+    </div>
 
     <footer>
         <div class="footer-row">
@@ -118,6 +136,8 @@
     <script src="../../js/filmes/modal.js"></script>
 
     <script src="../../js/filmes/modalEdicao.js"></script>
+
+    <script src="../../js/filmes/categorias.js"></script>
 
     <!--Flickity-->
     <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>

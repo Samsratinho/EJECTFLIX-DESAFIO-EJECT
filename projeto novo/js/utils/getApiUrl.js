@@ -1,7 +1,7 @@
-let filmes = [] 
+ let filmes = [] 
 const endpointDaAPI = 'https://movies-api-juliocsoares.fly.dev/filmes'
 
-const API_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NDUxNjM5LCJpYXQiOjE3MzY0NTA0MzksImp0aSI6IjU5ZTU1ZjQxZmQxYTQ5NTA5YTAwOWZkNjhkZmYxZjg4IiwidXNlcl9pZCI6MTF9.EEPBmrp9mRimTkx0LO8qKp9uwUlxMp3ew5vLFkKo7QA';
+const API_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NDQ4Mzk4LCJpYXQiOjE3MzY0NDcxOTgsImp0aSI6ImEzMDFmY2U3N2RkNTQ0ZjA4Yzc5ZjVmMDRiYmUzNjBjIiwidXNlcl9pZCI6MTF9.SgfYg6oe8Lcmqf_QMJzCSjp6Uu4hMHGDOzRuqvqbviI';
 
 getBuscarFilmesDaAPI();
 
