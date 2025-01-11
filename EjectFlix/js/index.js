@@ -1,3 +1,4 @@
+/* Botão de ligação de janelas */
 const botao = document.getElementById("submit-btn");
 
         botao.addEventListener("click", (event) => {
@@ -6,6 +7,9 @@ const botao = document.getElementById("submit-btn");
 
             window.location.href = "../pages/filmes/filmes.html";
         });
+
+
+/* Quando tiver api validar o email e senha e mandar o token */
 
 /* import { getApiUrl } from './utils/getApiUrl.js';
 

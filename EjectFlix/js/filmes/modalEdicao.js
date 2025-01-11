@@ -1,3 +1,5 @@
+/* Js do Segundo Modal */
+
 /* // Seleção dos elementos
 const modal1 = document.querySelector(".modal-1");
 const openModalButton1 = document.querySelector(".btn-open-1");

@@ -1,3 +1,4 @@
+/* Importações para Formar os Cards do Carrossel e Carrossel */
 import { renderizarDivs } from "../utils/utils.js";
 import { itemCarrosselFilmes } from "../utils/template.js";
 import { itemCarrosselFilmesData, itemCarrosselFilmesData2 } from "../utils/data.js";

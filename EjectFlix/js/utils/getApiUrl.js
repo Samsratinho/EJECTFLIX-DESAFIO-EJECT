@@ -1,4 +1,5 @@
- let filmes = [] 
+/* Função para pegar a Api */
+let filmes = [] 
 const endpointDaAPI = 'https://api.themoviedb.org/3/movie/now_playing'
 
 const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMTVkY2Y5YWJjODRmMDkzNzBkOGE2OTgxNTY2ZjcwNyIsIm5iZiI6MTczNjU1MzY1NC40MDk5OTk4LCJzdWIiOiI2NzgxYjRiNjIxOGZkNTdhY2Y0ZWM0NDciLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.Vgey3l45Kk9eAs2ObIqifpXWAz8TW_acPhdTL2BH9i0';
@@ -6,6 +7,7 @@ const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMTVkY2Y5YWJjODRmMDkzNzBkOGE2
 getBuscarFilmesDaAPI();
 const itemCarrosselFilmes = document.getElementById('filmes-1')
 
+/* validação do acces_token */
 async function getBuscarFilmesDaAPI() {
   try {
     const res = await fetch(endpointDaAPI, {
@@ -15,6 +17,7 @@ async function getBuscarFilmesDaAPI() {
     });
 
     if (!res.ok) {
+      /* deu errado demais */
       if (res.status === 401) {
         console.error("Autenticação falhou. Verifique o seu token da API.");
       } else {
@@ -22,15 +25,16 @@ async function getBuscarFilmesDaAPI() {
       }
       return;
     }
-
+    /* deu certo!!! */
     filmes = await res.json();
     console.table(filmes);
     exibirOsFilmesNaTela(filmes);
+    /* deu errado mais ou menos */
   } catch (error) {
     console.error("Erro ao buscar dados:", error);
   }
 }
-
+/* caso a api tivess funcionando ia printar na tela os cards dos filmes */
 function exibirOsFilmesNaTela(listaDeFilmes) {
   listaDeFilmes.forEach(filmes => {
     itemCarrosselFilmes.innerHTML += `

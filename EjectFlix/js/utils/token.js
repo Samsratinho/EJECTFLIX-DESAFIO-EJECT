@@ -16,4 +16,4 @@ async function login(username, password) {
 }
 
 // Exemplo de chamada da função
-login('Samuel-Silva-de-Lima', 'SamEject.1306');
+login('Seu-Usuario', 'Sua-Senha');

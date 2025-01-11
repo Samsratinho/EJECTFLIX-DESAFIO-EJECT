@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação dos css -->
     <link rel="stylesheet" href="../../css/filmes/filmes.css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css">
     <link rel="stylesheet" href="../../css/filmes/modalEdicao.css">
@@ -13,6 +14,7 @@
 </head>
 <body>
     
+    <!-- Logo Eject / NavBar Logo / Eject  -->
     <header>
         <span class="ejectflix-logo-span">
             <img src="../../img/ejectflix-logo.png" alt="">
@@ -21,7 +23,7 @@
             <ul>
                 <li>Início</li>
                 <button id="btn-categorias" class="btn-categorias">Categorias</button>
-                <button id="btn-modal" class="btn-add">Adicionar Filmes</button> <!-- btn modal ^ -->
+                <button id="btn-modal" class="btn-add">Adicionar Filmes</button> 
             </ul>
         </nav>
         <span class="eject-icone-span">
@@ -29,6 +31,7 @@
         </span>
     </header>
 
+    <!-- 2 NavBar das Categorias -->
     
     <div class="categories-parent" id="categories-parent">
         <nav class="categories-nav">
@@ -42,10 +45,12 @@
         </nav>
     </div>
 
-    <div id="modal" class="modal"> <!-- modal -->
+
+    <!-- Modal -->
+    <div id="modal" class="modal"> 
         <form class="modal-content">
             <div class="close-content">
-                <span id="close" class="close">&times;</span> <!-- close -->
+                <span id="close" class="close">&times;</span> 
             </div>
             <p class="adicionar-filme">Adicionar Filme à lista:</p>
 
@@ -74,9 +79,7 @@
         </form>
     </div>
 
-    <section class="livros wrap" id="filmes-1">
-
-    </section>
+    <!-- Carrossel -->
 
     <main>
         <section class="nav_section">
@@ -87,7 +90,7 @@
         </section>
     </main>
 
-    <!-- Modal -->
+    <!-- 2 Modal -->
     <div class="modal-1">
         <div class="modal-content-1">
             <span class="close-1">&times;</span>
@@ -122,6 +125,8 @@
         </div>
     </div>
 
+    <!-- Footer -->
+
     <footer>
         <div class="footer-row">
             <p>Made by Samuel Silva</p>
@@ -131,6 +136,7 @@
         </div>
     </footer>
 
+    <!-- Importações do Js -->
     <script type="module" src="../../js/filmes/filmes.js"></script>
 
     <script src="../../js/utils/getApiUrl.js"></script>

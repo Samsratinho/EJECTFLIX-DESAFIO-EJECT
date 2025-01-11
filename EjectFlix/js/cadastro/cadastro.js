@@ -1,3 +1,4 @@
+/* Botão de ligação de janelas */
 const botao = document.getElementById("submit-btn-1");
 
         botao.addEventListener("click", (event) => {
@@ -6,6 +7,9 @@ const botao = document.getElementById("submit-btn-1");
 
             window.location.href = "../../index.html";
         });
+
+
+/* Quando tiver api validar o email e senha e mandar o token */
 
 /* import { getApiUrl } from "../utils/getApiUrl.js"
 const $email = document.querySelector("#email")
