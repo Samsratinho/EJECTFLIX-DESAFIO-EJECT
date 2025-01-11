@@ -1,7 +1,16 @@
-import { getApiUrl } from "../utils/getApiUrl.js"
+const botao = document.getElementById("submit-btn-1");
+
+        botao.addEventListener("click", (event) => {
+
+            event.preventDefault();
+
+            window.location.href = "../../index.html";
+        });
+
+/* import { getApiUrl } from "../utils/getApiUrl.js"
 const $email = document.querySelector("#email")
 const $senha = document.querySelector("#senha")
-const $submitBtn = document.querySelector("#submit-btn")
+const $submitBtn = document.querySelector("#submit-btn-1")
 const $mensagemForm = document.querySelector("#mensagem-form")
 
 // esperar correção de erro de cors
@@ -34,4 +43,4 @@ async function cadastrarUser(email, senha){
 $submitBtn.addEventListener("click", (e)=>{
     e.preventDefault()
     cadastrarUser($email.value, $senha.value)
-})
+}) */

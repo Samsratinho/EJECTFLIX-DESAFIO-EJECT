@@ -1,4 +1,4 @@
-// Seleção dos elementos
+/* // Seleção dos elementos
 const modal1 = document.querySelector(".modal-1");
 const openModalButton1 = document.querySelector(".btn-open-1");
 const closeModalButton1 = document.querySelector(".close-1");
@@ -18,4 +18,4 @@ window.addEventListener("click", (event) => {
     if (event.target === modal1) {
         modal1.style.display = "none";
     }
-});
+}); */

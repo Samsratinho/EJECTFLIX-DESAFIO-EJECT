@@ -1,9 +1,10 @@
  let filmes = [] 
-const endpointDaAPI = 'https://movies-api-juliocsoares.fly.dev/filmes'
+const endpointDaAPI = 'https://api.themoviedb.org/3/movie/now_playing'
 
-const API_TOKEN = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM2NDQ4Mzk4LCJpYXQiOjE3MzY0NDcxOTgsImp0aSI6ImEzMDFmY2U3N2RkNTQ0ZjA4Yzc5ZjVmMDRiYmUzNjBjIiwidXNlcl9pZCI6MTF9.SgfYg6oe8Lcmqf_QMJzCSjp6Uu4hMHGDOzRuqvqbviI';
+const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiMTVkY2Y5YWJjODRmMDkzNzBkOGE2OTgxNTY2ZjcwNyIsIm5iZiI6MTczNjU1MzY1NC40MDk5OTk4LCJzdWIiOiI2NzgxYjRiNjIxOGZkNTdhY2Y0ZWM0NDciLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.Vgey3l45Kk9eAs2ObIqifpXWAz8TW_acPhdTL2BH9i0';
 
 getBuscarFilmesDaAPI();
+const itemCarrosselFilmes = document.getElementById('filmes-1')
 
 async function getBuscarFilmesDaAPI() {
   try {
@@ -24,7 +25,26 @@ async function getBuscarFilmesDaAPI() {
 
     filmes = await res.json();
     console.table(filmes);
+    exibirOsFilmesNaTela(filmes);
   } catch (error) {
     console.error("Erro ao buscar dados:", error);
   }
+}
+
+function exibirOsFilmesNaTela(listaDeFilmes) {
+  listaDeFilmes.forEach(filmes => {
+    itemCarrosselFilmes.innerHTML += `
+      <div class="carousel-cell">
+        <div class="container-item-img">
+            <img src="${filmes.poster_path}" alt="Imagem do item" class="item-img" />
+            <div class="capa">
+                <img src="../../img/plus.svg" alt="plus" class= "btn-open-1"></img>
+                <p class="titulo">Titulo</p>
+                <p class="generos">Aventura, Fantasia</p>
+                <p class="ano-lancamento">2007</p>
+            </div>
+        </div>
+    </div>
+`
+  })
 }
